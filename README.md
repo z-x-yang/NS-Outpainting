@@ -1,6 +1,7 @@
 # Very Long Natural Scenery Image Prediction by Outpainting (NS-Outpainting)
-A neural architecture for scenery image outpaiting ([ICCV 2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Yang_Very_Long_Natural_Scenery_Image_Prediction_by_Outpainting_ICCV_2019_paper.pdf)), implemented in [PyTorch](http://www.tensorflow.org).
+A neural architecture for scenery image outpaiting ([ICCV 2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Yang_Very_Long_Natural_Scenery_Image_Prediction_by_Outpainting_ICCV_2019_paper.pdf)), implemented in [TensorFlow](http://www.tensorflow.org).
 
+The architecture has an ability to generate a very long high-quality prediction from a small input image by outpaiting:
 <img src="https://github.com/z-x-yang/NS-Outpainting/raw/master/examples/3.png" width="90%"/>
 <img src="https://github.com/z-x-yang/NS-Outpainting/raw/master/examples/2.png" width="90%"/>
 <img src="https://github.com/z-x-yang/NS-Outpainting/raw/master/examples/1.png" width="90%"/>
@@ -15,7 +16,7 @@ For training and testing, we collect a new outpainting dataset, which has 6,000 
 
 For training and evaluation, you can use [train.sh](/train.sh) and [eval.sh](/eval.sh). Please remember to set the TFRecord dataset path inside them.
 
-Besides, you can get our pretrain model from [here](https://drive.google.com/file/d/1-DLSwNkB93MMKaYVO1rmPP9iJllXDJrg/view?usp=sharing).
+Besides, you can get our **pretrain model** from [here](https://drive.google.com/file/d/1-DLSwNkB93MMKaYVO1rmPP9iJllXDJrg/view?usp=sharing).
 
 ## Citation
 ```
