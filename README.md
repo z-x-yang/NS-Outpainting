@@ -18,6 +18,10 @@ For training and evaluation, you can use [train.sh](/train.sh) and [eval.sh](/ev
 
 Besides, you can get our **pretrain model** from [here](https://drive.google.com/file/d/1-DLSwNkB93MMKaYVO1rmPP9iJllXDJrg/view?usp=sharing), and run eval_model.py to evaluate it.
 
+After running eval_model.py, the evaluation process will store 4 types of images: 1) "ori_xxx.jpg", the groundtruth images of size 128x256; 2) "m0_xxx.jpg", the 1-step predictions of size 128x256 without any post-processing methods. 3) "m1_xxx.jpg", the 1-step predictions of size 128x256 with smoothly stitching. 4) "endless_xxx.jpg", the 4-step predictions of size 128x640.
+
+Notably, we measure Inception Score and Inception Distance between "ori_xxx.jpg" and "m0_xxx.jpg" in our paper.
+
 ## Citation
 ```
 @inproceedings{yang2019very,
